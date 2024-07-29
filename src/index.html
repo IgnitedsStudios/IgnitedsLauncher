@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./img/icon/logo.png">
+  <title>Igniteds Launcher</title>
+</head>
+<body>
+  <div class="App">
+    <header class="App-header">
+      <img src="./img/logo.png" class="logo" alt="logo" />
+      <h1 class="title">Squid Bedrock 2</h1>
+    </header>
+    <div class="content">
+      <button class="start-button" onclick="handleStartClick()">
+        <img id="dynamicImage" src="./img/start.png" alt="Start" />
+      </button>
+      <button class="download-button" onclick="handleDownloadClick()">Download Packs</button>
+    </div>
+  </div>
+
+  <script>
+    let showGif = false;
+    let timerEnded = false;
+
+    function handleStartClick() {
+      // Cambia la imagen a GIF al hacer clic
+      document.getElementById('dynamicImage').src = './img/start.gif';
+
+      // Temporizador para ocultar el GIF y abrir el juego
+      setTimeout(() => {
+        document.getElementById('dynamicImage').src = './img/start.png'; // Restablecer la imagen
+        timerEnded = true;
+
+        if (timerEnded) {
+          // Aquí abres el juego (esto es un ejemplo, necesitarás definir cómo abrir el juego)
+          window.location.href = 'minecraft://connect?serverUrl=br.mcsrv.me&serverPort=10907';
+          window.close();
+        }
+      }, 800); // Ajusta el tiempo según sea necesario
+    }
+
+    function handleDownloadClick() {
+      window.open('https://cdn.discordapp.com/attachments/1066480386118537389/1073618973557538836/bedrock_secret.txt?ex=66a7ae16&is=66a65c96&hm=c23976cf41b583cb310d7adfee8ec550a218e1afd50979a650e3248d1cf5b27f&', '_self');
+    }
+  </script>
+</body>
+</html>
