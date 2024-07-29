@@ -12,7 +12,7 @@
   },
   "build": {
     "appId": "com.ignitedstudios.launcher",
-    "productName": "Squid Bedrock Launcher",
+    "productName": "Igniteds Launcher",
     "files": [
       "src/**/*",
       "public/**/*",

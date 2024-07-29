@@ -1,6 +1,6 @@
 @font-face {
   font-family: "squidbedrock";
-  src: url("./fonts/Game\ Of\ Squids.ttf") format("truetype");
+  src: url("https://ignitedsstudios.github.io/IgnitedsLauncher/src/fonts/titles.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./img/background2.jpg");
+  background-image: url("https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

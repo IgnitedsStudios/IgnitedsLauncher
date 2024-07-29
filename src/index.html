@@ -11,7 +11,7 @@
   <div class="App">
     <header class="App-header">
       <img src="./img/logo.png" class="logo" alt="logo" />
-      <h1 class="title">Squid Bedrock 2</h1>
+      <h1 class="title">Loading...</h1> <!-- Texto por defecto mientras carga el JSON -->
     </header>
     <div class="content">
       <button class="start-button" onclick="handleStartClick()">
@@ -22,9 +22,30 @@
   </div>
 
   <script>
+    let packsUrl = '#'; // Variable para almacenar la URL de los packs
+    let serverUrl = 'minecraft://connect?serverUrl=NONE&serverPort=NONE';
+    // Función para cargar el archivo JSON y actualizar el título y la URL de los packs
+    function loadEventData() {
+      fetch('https://raw.githubusercontent.com/IgnitedsStudios/IgnitedsLauncher/main/src/event.json')
+        .then(response => response.json())
+        .then(data => {
+          const { eventName, packs, ip, port } = data;
+          // Actualiza el contenido del h1 con el nombre del evento
+          document.querySelector('h1.title').textContent = eventName;
+          serverUrl = `minecraft://connect?serverUrl=${ip}&serverPort=${port}`
+          // Almacena la URL de los packs
+          packsUrl = packs;
+        })
+        .catch(error => {
+          console.error('Error al cargar el archivo JSON:', error);
+        });
+    }
+
+    // Llama a la función para cargar los datos cuando la página se carga
+    window.onload = loadEventData;
+
     let showGif = false;
     let timerEnded = false;
-
     function handleStartClick() {
       // Cambia la imagen a GIF al hacer clic
       document.getElementById('dynamicImage').src = './img/start.gif';
@@ -36,14 +57,19 @@
 
         if (timerEnded) {
           // Aquí abres el juego (esto es un ejemplo, necesitarás definir cómo abrir el juego)
-          window.location.href = 'minecraft://connect?serverUrl=br.mcsrv.me&serverPort=10907';
+          window.location.href = serverUrl;
           window.close();
         }
       }, 800); // Ajusta el tiempo según sea necesario
     }
 
     function handleDownloadClick() {
-      window.open('https://cdn.discordapp.com/attachments/1066480386118537389/1073618973557538836/bedrock_secret.txt?ex=66a7ae16&is=66a65c96&hm=c23976cf41b583cb310d7adfee8ec550a218e1afd50979a650e3248d1cf5b27f&', '_self');
+      // Usa la URL de los packs almacenada en la variable packsUrl
+      if (packsUrl) {
+        window.open(packsUrl, '_self');
+      } else {
+        console.error('URL de los packs no disponible.');
+      }
     }
   </script>
 </body>
