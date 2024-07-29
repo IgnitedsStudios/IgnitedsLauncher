@@ -28,12 +28,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/background2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: #1c0235;
 }
 
 .App {

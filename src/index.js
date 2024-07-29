@@ -13,7 +13,6 @@ function createWindow() {
     },
     icon: path.join(__dirname, 'img/icon/logo.ico')  // Asegúrate de que la ruta es correcta
   });
-
   win.maximize();
   win.loadFile('src/index.html');
 
