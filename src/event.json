@@ -1,6 +1,6 @@
 {
   "eventName": "SQUID BEDROCK 2",
-  "background": "https://github.com/IgnitedsStudios/IgnitedsLauncher/blob/88100c9d8869b67133ebcb395bbfd876043dc210/src/img/video.mp4",
+  "background": "https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/video.mp4",
   "backgroundIsVideo": true,
   "ip": "br.mcsrv.me",
   "port": "10907",
