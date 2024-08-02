@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/37ddffb5-492e-46c1-ba6c-be99d5af9f14)@everyone Oficialmente ya está terminado.
-
 # Igniteds Launcher
 
 - Abre el juego
