@@ -3,7 +3,7 @@
 - Abre el juego
 - Abre el server
 - Ahora tiene un botón para recargar el launcher **(Ambas plataformas)**
-- Ahora también tiene una web para que gente que no quiera instalar el launcher, pueda abrirlo desde la web **(Esto aplica para toda plataforma: Android, PC, iOs y aún por saber, Xbox y PlayStation)**: https://ignitedsstudios.github.io/IgnitedsLauncherAndroid/
+- Ahora también tiene una web para que gente que no quiera instalar el launcher, pueda abrirlo desde la web **(Esto aplica para toda plataforma: Android, PC, iOs y aún por saber, Xbox y PlayStation)**: [[https://ignitedsstudios.github.io/IgnitedsLauncherAndroid/](/)](https://ignitedsstudios.github.io/IgnitedsLauncherWeb)
 
 
 # Descargar Launcher
