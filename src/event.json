@@ -1,6 +1,6 @@
 {
   "eventName": "GSMP",
-  "background": "https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/guard.mp4",
+  "background": "https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/guard",
   "backgroundIsVideo": true,
   "ip": "br.mcsrv.me",
   "port": "10907",
