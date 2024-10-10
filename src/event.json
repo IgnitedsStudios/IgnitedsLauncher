@@ -1,7 +1,7 @@
 {
   "eventName": "",
-  "background": "https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/gsmp.png",
-  "backgroundIsVideo": false,
+  "background": "https://ignitedsstudios.github.io/IgnitedsLauncher/src/img/guard.mp4",
+  "backgroundIsVideo": true,
   "ip": "br.mcsrv.me",
   "port": "10907",
   "serverStatus": true,
